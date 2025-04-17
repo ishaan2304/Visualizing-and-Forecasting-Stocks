@@ -13,19 +13,21 @@ from model import prediction
 from sklearn.svm import SVR
 import matplotlib.pyplot as plt
 
-
 def get_stock_price_fig(df):
-    # Flatten multi-level columns if they exist
+    # Reset index to make 'Date' a column
+    df.reset_index(inplace=True)
+
+    # Flatten multi-index columns if they exist
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = [' '.join(col).strip() for col in df.columns]
 
-    fig = px.line(df,
-                  x="Date",
-                  y=["Close", "Open"],
-                  title="Closing and Opening Price vs Date")
+    print(df.columns)  # Optional: to check what's inside
 
+    # Try to find Close columns dynamically
+    close_cols = [col for col in df.columns if "Close" in col]
+
+    fig = px.line(df, x="Date", y=close_cols, title="Stock Price")
     return fig
-
 
 def get_more(df):
     # Flatten multi-level columns if they exist
