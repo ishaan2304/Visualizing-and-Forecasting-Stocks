@@ -1,6 +1,7 @@
 # Visualizing-and-Forecasting-Stocks-using-Dash
 Machine Learning project for forcasting and visuslizing the stocks in a graphical format using the stock code of the company
 
+
 On clicking submit button
 ![Screenshot (3592)](https://user-images.githubusercontent.com/78688840/209056416-cee03b2f-6eed-4437-8ffa-3b52d49a1b1a.png)
 
