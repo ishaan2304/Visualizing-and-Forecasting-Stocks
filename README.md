@@ -1,6 +1,6 @@
 # Visualizing and Forecasting Stocks using Dash
 
-This project is a web application built with Dash that allows users to visualize stock data and forecast future trends. Users can input stock tickers, view stock prices, indicators, and generate forecasts for a specified number of days.
+This project is a web application built with Dash that allows users to visualize stock data and forecast future trends. Users can input stock tickers, view stock prices, indicators, and generate forecasts for a specified number of days
 
 ---
 
